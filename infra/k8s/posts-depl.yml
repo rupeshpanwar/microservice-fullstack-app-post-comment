@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: posts
-          image:  rupeshpanwar/posts:0.0.1
+          image:  rupeshpanwar/posts
