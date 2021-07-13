@@ -13,8 +13,8 @@ spec:
         app: event-bus
     spec:
       containers:
-        - name: posevent-bus
-          image:  rupeshpanwar/event-bus
+        - name: event-bus
+          image: cygnetops/event-bus-85
 ---
 apiVersion: v1
 kind: Service
@@ -24,7 +24,7 @@ spec:
   selector:
     app: event-bus
   ports:
-  - name:  event-bus
-    port:  4005
-    protocol: TCP
-    targetPort: 4005
+    - name: event-bus
+      protocol: TCP
+      port: 4005
+      targetPort: 4005
